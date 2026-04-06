@@ -116,6 +116,7 @@ def main():
         torch_dtype=torch.bfloat16,
         low_cpu_mem_usage=True,
         trust_remote_code=True,
+        device_map="auto",
     )
 
     # Gradient checkpointing 활성화 (VRAM 절약)
